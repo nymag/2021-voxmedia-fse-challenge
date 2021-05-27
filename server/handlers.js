@@ -1,17 +1,11 @@
 const { get } = require("./db");
 
 module.exports = {
-  // implement me
-  getMigratedUrl: () => {
-    return "newtube.com/1";
-  },
-  // implement me
-  getOriginalUrl: (req, res) => {
-    return get().then(data => res.send(data.original_items));
-  },
-  // implement me
-  getAllMigratedEpisodeTitles: () => {
-    return ["title", "title1"];
+  // takes uid and returns old/new
+  getByID: async (req, res) => {
+    const allData = await get();
+
+    return res.json(allData);
   },
   getAllData: (req, res, next) => {
     return get().then((data) => res.send(data));
