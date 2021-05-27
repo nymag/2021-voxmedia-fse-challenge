@@ -6,8 +6,8 @@ module.exports = {
     return "newtube.com/1";
   },
   // implement me
-  getOriginalUrl: () => {
-    return "oldtube.com/1";
+  getOriginalUrl: (req, res) => {
+    return get().then(data => res.send(data.original_items));
   },
   // implement me
   getAllMigratedEpisodeTitles: () => {
