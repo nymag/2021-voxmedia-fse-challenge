@@ -6,6 +6,9 @@ const data = {
       unique_slug: "D473",
       url: "oldtube.com/1",
     },
+    // Challenge: Filter `null`s in the frontend, then backend, or backend, then
+    // frontend.
+    null,
     {
       title: "Episode 2",
       id: "123A",
@@ -23,6 +26,13 @@ const data = {
       id: "HJHS",
       unique_slug: "OIUX",
       url: "oldtube.com/4",
+    },
+    // Challenge: Manage a missing ID (front/back / back/front).
+    // Challenge: CORS bug.
+    {
+      title: "Episode 5 Not Migrated",
+      unique_slug: "AVUN",
+      url: "oldtube.com/5",
     },
   ],
   migrated_items: [
