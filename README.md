@@ -1,3 +1,3 @@
 # special-octo-disco
 
-`npm run watch`
+`npm run dev`

@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon index.js",
-    "start": "parcel frontend/index.html"
+    "dev": "npm run dev:client & npm run dev:server",
+    "dev:server": "nodemon ./server/index.js",
+    "dev:client": "parcel ./frontend/index.html"
   },
   "keywords": [],
   "author": "",
