@@ -1,5 +1,10 @@
 const { get } = require("./db");
 
+// challenge: add memoization (to simulate db caching),
+// and consider any refactoring to improve testability
+// and separation of concerns
+
+
 module.exports = {
   // takes uid and returns old/new
   getByID: async (req, res) => {

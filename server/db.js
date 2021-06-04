@@ -55,5 +55,7 @@ const data = [
 ];
 
 module.exports = {
+  // challenge: randomly add a delay in the range of 50ms to 500ms
+  // to mimic latency in db operation
   get: () => new Promise((resolve) => resolve(data)),
 };
