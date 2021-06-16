@@ -2,60 +2,69 @@ const data = [
   {
     title: "Episode 1",
     id: "CAW1",
-    unique_slug: "D473",
+    views: 702,
     url: "oldtube.com/1",
+    provider: "oldtube"
   },
-  // Challenge: Filter `null`s in the frontend, then backend, or backend, then
-  // frontend.
   null,
   {
     title: "Episode 2",
     id: "123A",
-    unique_slug: "0301",
+    views: 23048,
     url: "oldtube.com/2",
+    provider: "oldtube"
   },
   {
     title: "Episode 3",
     id: "LKI4",
-    unique_slug: "B6C5",
+    views: 9723,
     url: "oldtube.com/3",
+    provider: "oldtube"
   },
   {
     title: "Episode 4 Not Migrated",
     id: "HJHS",
-    unique_slug: "OIUX",
+    views: 1280,
     url: "oldtube.com/4",
+    provider: "oldtube"
   },
-  // Challenge: Manage a missing ID (front/back / back/front).
-  // Challenge: CORS bug.
   {
     title: "Episode 5 Not Migrated",
-    unique_slug: "AVUN",
+    id: "AVUN",
+    views: 2696,
     url: "oldtube.com/5",
+    provider: "oldtube"
   },
-
   {
     title: "Episode 1",
-    id: 2341,
-    unique_slug: "D473",
+    id: "D473",
+    views: 2349,
     url: "newtube.com/1",
+    provider: "newtube"
   },
   {
     title: "Episode 2",
-    id: 1231,
-    unique_slug: "0301",
+    id: "0301",
+    views: 34987,
     url: "newtube.com/2",
+    provider: "newtube"
   },
   {
     title: "Episode 3",
-    id: 2341,
-    unique_slug: "B6C5",
+    id: "B6C5",
+    views: 2348,
     url: "newtube.com/3",
+    provider: "newtube"
   },
+  {
+    title: "Guinea pig bridge",
+    id: "bq9ghmgqoyc",
+    url: "https://www.youtube.com/watch?v=bq9ghmgqoyc",
+    views: 500003023,
+    provider: "youtube"
+  }
 ];
 
 module.exports = {
-  // challenge: randomly add a delay in the range of 50ms to 500ms
-  // to mimic latency in db operation
-  get: () => new Promise((resolve) => resolve(data)),
+  get: () => new Promise((resolve) => resolve(data))
 };
