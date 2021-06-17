@@ -1,4 +1,4 @@
-const { getAllData } = require("./handlers");
+const { get } = require("./db");
 
 const express = require("express");
 const app = express();
@@ -11,8 +11,14 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/videos", getAllData);
+app.get("/videos", (req, res) => {
+  return get().then((data) => res.send(data));
+});
+
 // Add endpoint for getting videos by id
+app.get("/videos/:id", (req, res) => {
+  res.status(404);
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
