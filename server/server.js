@@ -17,7 +17,7 @@ app.get("/videos", (req, res) => {
 
 // Add endpoint for getting videos by id
 app.get("/videos/:id", (req, res) => {
-  res.status(404);
+  res.status(404).end();
 });
 
 app.listen(port, () => {
