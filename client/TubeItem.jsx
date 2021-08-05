@@ -1,5 +1,4 @@
 import React from "react";
-import "./component.css";
 
 // Accept a tube item, render some properties
 // Add css class to the tubeItem
