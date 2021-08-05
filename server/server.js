@@ -1,4 +1,4 @@
-const { get } = require("./db");
+const db = require("./db");
 
 const express = require("express");
 const app = express();
@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/videos", (req, res) => {
-  return get().then((data) => res.send(data));
+  return db.fetchAll().then((data) => res.send(data));
 });
 
 // Add endpoint for getting videos by id

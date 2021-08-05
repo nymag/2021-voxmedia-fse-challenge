@@ -66,5 +66,5 @@ const data = [
 ];
 
 module.exports = {
-  get: () => new Promise((resolve) => resolve(data))
+  fetchAll: () => new Promise((resolve) => resolve(data))
 };
