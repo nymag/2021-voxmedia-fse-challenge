@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import "./TubeViewer.css";
+import React, { Component } from "react"
+import "./TubeViewer.css"
 
 class TubeViewer extends Component {
   state = {
     tubeItems: []
   };
 
-  componentDidMount() {
-    this.getTubeData();
+  componentDidMount () {
+    this.getTubeData()
   }
 
   // Use `fetch` to get video data from the API. Calling `setState` will cause
@@ -16,28 +16,28 @@ class TubeViewer extends Component {
     this.setState({
       tubeItems: [
         {
-          title: "Episode 1",
+          description: "It may seem confusing, but it's 100 percent true! Your budget for engaging should be at least three times your budget for innovating should be at least one-half of your budget for innovating should be at least one-half of your budget for harnessing.",
           id: "CAW1",
-          views: 702,
-          url: "oldtube.com/1",
-          provider: "oldtube"
+          provider: "oldtube",
+          title: "Episode 1",
+          views: 702
         }
       ]
     })
   };
 
-  render() {
-    const { tubeItems } = this.state;
+  render () {
+    const { tubeItems } = this.state
 
     return (
       <div className="tube-items">
         <div className="tube-item">
-          {tubeItems.length > 0 && tubeItems[0].title}
-          {/* Render all tube items */}
+          { tubeItems.length > 0 && tubeItems[0].title }
+          {/* Render all tube items */ }
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default TubeViewer;
+export default TubeViewer
