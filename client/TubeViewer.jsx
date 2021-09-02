@@ -6,20 +6,24 @@ class TubeViewer extends Component {
     tubeItems: []
   };
 
-  // https://reactjs.org/docs/react-component.html#the-component-lifecycle
-  // https://reactjs.org/docs/react-component.html#componentdidmount
   componentDidMount() {
-    return this.getTubeData();
+    this.getTubeData();
   }
 
+  // Use `fetch` to get video data from the API. Calling `setState` will cause
+  // the component to re-render.
   getTubeData = () => {
-    return fetch("http://localhost:3002/videos/")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({
-          tubeItems: data
-        });
-      });
+    this.setState({
+      tubeItems: [
+        {
+          title: "Episode 1",
+          id: "CAW1",
+          views: 702,
+          url: "oldtube.com/1",
+          provider: "oldtube"
+        }
+      ]
+    })
   };
 
   render() {
@@ -28,9 +32,8 @@ class TubeViewer extends Component {
     return (
       <div className="tube-items">
         <div className="tube-item">
-          <div>{tubeItems.length > 0 && tubeItems[0].title}</div>
+          {tubeItems.length > 0 && tubeItems[0].title}
           {/* Render all tube items */}
-          {/* Extract to TubeItem */}
         </div>
       </div>
     );
