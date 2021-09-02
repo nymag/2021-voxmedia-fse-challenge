@@ -8,6 +8,10 @@
     "dev:client": "parcel serve ./client/index.html",
     "dev:server": "nodemon --watch server server/server.js"
   },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
   "dependencies": {
     "concurrently": "^6.2.0",
     "cors": "2.8.5",
