@@ -1,0 +1,19 @@
+/* $breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px); */
+
+.article-content {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.article-page {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 576px) {
+  .article-page {
+    grid-template-columns: 3fr 1fr;
+  }
+}
