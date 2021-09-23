@@ -1,5 +1,6 @@
-import React, { Component } from "react";
 import "./TubeViewer.css";
+import { Component } from "react";
+import TubeItem from "./TubeItem";
 
 class TubeViewer extends Component {
   state = {
