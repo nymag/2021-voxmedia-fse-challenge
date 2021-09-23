@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "checkJs": true
+  },
+  "include": [
+    "./client/**/*.js",
+    "./client/**/*.jsx",
+    "./server/**/*.js"
+  ],
+  "typeAcquisition": {
+    "enable": true
+  }
+}
