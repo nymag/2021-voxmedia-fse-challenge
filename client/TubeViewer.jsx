@@ -30,8 +30,6 @@ class TubeViewer extends Component {
       <div className="tube-items">
         <div className="tube-item">
           <div>{tubeItems.length > 0 && tubeItems[0].title}</div>
-          {/* Render all tube items */}
-          {/* Extract to TubeItem */}
         </div>
       </div>
     );

@@ -15,9 +15,8 @@ app.get("/videos", (req, res) => {
   return db.fetchAll().then((data) => res.send(data));
 });
 
-// Add endpoint for getting videos by id
 app.get("/videos/:id", (req, res) => {
-  res.status(404).end();
+  res.status(404).send();
 });
 
 app.listen(port, () => {
