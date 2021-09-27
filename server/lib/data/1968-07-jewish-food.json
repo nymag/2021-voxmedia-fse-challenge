@@ -3,7 +3,7 @@
   "agora": {
     "brand": "New York Magazine Cover Store",
     "createdAt": "2021-09-17T14:40:20.011Z",
-    "imageUrl": "https://pyxis.nymag.com/v1/imgs/72f/053/d57ffdc2fe73f99b483542bccdab67c48f-the-underground-gourmets-guide-to-jewish.jpg",
+    "imageUrl": "~/client/assets/images/1968-07-jewish-food.jpg",
     "merchants": [
       {
         "affiliateId": 11,

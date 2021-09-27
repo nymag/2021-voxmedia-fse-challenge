@@ -3,7 +3,7 @@
   "agora": {
     "brand": "New York Magazine Cover Store",
     "createdAt": "2021-09-17T14:41:36.525Z",
-    "imageUrl": "https://pyxis.nymag.com/v1/imgs/49a/c72/dcbe26c9a3bac3c0bb0c7ce8ced6e032c6-1-why-everybody-is-talking-about-gossip-.jpg",
+    "imageUrl": "~/client/assets/images/1976-05-gossip.jpg",
     "merchants": [
       {
         "affiliateId": 11,
