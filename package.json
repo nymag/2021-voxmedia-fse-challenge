@@ -10,7 +10,7 @@
   "scripts": {
     "start": "concurrently --handle-input --default-input-target=\"start:server\" \"npm:start:*\"",
     "start:client": "parcel serve ./client/index.html",
-    "start:server": "nodemon --watch ./server --ext js,mjs,cjs ./server/app.mjs"
+    "start:server": "nodemon --watch ./server --ext js,mjs,cjs --exec babel-node ./server/app.js"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.15.4",

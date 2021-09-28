@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "corejs": {
+          "proposals": true,
+          "version": "3"
+        },
+        "targets": {
+          "node": "current"
+        },
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}

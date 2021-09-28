@@ -1,3 +1,4 @@
+import path from "path";
 import { promises as fs } from "fs";
 
 export class ProductDatabase {
@@ -8,7 +9,11 @@ export class ProductDatabase {
   }
 
   get(id) {
-    return Promise.resolve(this._products.get(id));
+    if (!this._products.has(id)) {
+      return Promise.reject(new Error(`Product not found: ${id}`));
+    }
+
+    return this._products.get(id);
   }
 
   list() {
@@ -17,15 +22,12 @@ export class ProductDatabase {
 
   async _seed() {
     const data = await Promise.all([
-      fs.readFile(new URL("data/1968-04-first.json", import.meta.url), "utf-8"),
+      fs.readFile(path.join(__dirname, "data/1968-04-first.json"), "utf-8"),
       fs.readFile(
-        new URL("data/1968-07-jewish-food.json", import.meta.url),
+        path.join(__dirname, "data/1968-07-jewish-food.json"),
         "utf-8"
       ),
-      fs.readFile(
-        new URL("data/1976-05-gossip.json", import.meta.url),
-        "utf-8"
-      ),
+      fs.readFile(path.join(__dirname, "data/1976-05-gossip.json"), "utf-8"),
     ]);
 
     this._products = data.reduce((products, jsonString) => {
