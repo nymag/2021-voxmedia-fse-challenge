@@ -4,7 +4,7 @@
   "product": {
     "brand": "New York Magazine Cover Store",
     "createdAt": "2021-09-17T14:41:36.525Z",
-    "imageUrl": "~/client/assets/images/1976-05-gossip.jpg",
+    "imageUrl": "1976-05-gossip.jpg",
     "merchants": [
       {
         "affiliateId": 11,

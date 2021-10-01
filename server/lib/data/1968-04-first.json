@@ -4,7 +4,7 @@
   "product": {
     "brand": "New York Cover Store",
     "createdAt": "2021-09-17T14:33:09.776Z",
-    "imageUrl": "assets/images/1968-04-first-issue.jpg",
+    "imageUrl": "1968-04-first-issue.jpg",
     "merchants": [
       {
         "affiliateId": 11,

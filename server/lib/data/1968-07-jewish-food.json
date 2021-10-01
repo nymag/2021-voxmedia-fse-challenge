@@ -4,7 +4,7 @@
   "product": {
     "brand": "New York Magazine Cover Store",
     "createdAt": "2021-09-17T14:40:20.011Z",
-    "imageUrl": "~/client/assets/images/1968-07-jewish-food.jpg",
+    "imageUrl": "1968-07-jewish-food.jpg",
     "merchants": [
       {
         "affiliateId": 11,
