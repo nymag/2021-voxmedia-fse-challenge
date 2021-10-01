@@ -1,5 +1,5 @@
-import path from "path";
 import { promises as fs } from "fs";
+import path from "path";
 
 export class ProductDatabase {
   _products = new Map();
@@ -30,10 +30,12 @@ export class ProductDatabase {
       fs.readFile(path.join(__dirname, "data/1976-05-gossip.json"), "utf-8"),
     ]);
 
-    this._products = data.reduce((products, jsonString) => {
+    const products = data.reduce((products, jsonString) => {
       const product = JSON.parse(jsonString);
-      products.set(product.agoraId, product);
+      products.set(product.productId, product);
       return products;
     }, new Map());
+
+    this._products = products;
   }
 }

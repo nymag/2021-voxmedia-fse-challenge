@@ -50,6 +50,16 @@ html {
 }
 
 .content p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 0 1.25rem;
+}
+
+.product-card {
+  height: auto;
+  width: 100%;
+}
+
+.product-card img {
+  height: auto;
+  max-width: 100%;
 }
