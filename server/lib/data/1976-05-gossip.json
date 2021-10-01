@@ -1,6 +1,7 @@
 {
   "_version": 3.6,
-  "agora": {
+  "creationDate": 1597174571356,
+  "product": {
     "brand": "New York Magazine Cover Store",
     "createdAt": "2021-09-17T14:41:36.525Z",
     "imageUrl": "~/client/assets/images/1976-05-gossip.jpg",
@@ -25,6 +26,5 @@
     "productId": "EoWKMH",
     "updatedAt": "2021-09-17T15:28:05.719Z"
   },
-  "agoraId": "EoWKMH",
-  "creationDate": 1597174571356
+  "productId": "EoWKMH"
 }

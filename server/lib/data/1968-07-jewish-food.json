@@ -1,6 +1,7 @@
 {
   "_version": 3.6,
-  "agora": {
+  "creationDate": 1597174571356,
+  "product": {
     "brand": "New York Magazine Cover Store",
     "createdAt": "2021-09-17T14:40:20.011Z",
     "imageUrl": "~/client/assets/images/1968-07-jewish-food.jpg",
@@ -25,6 +26,5 @@
     "productId": "wJHiY4",
     "updatedAt": "2021-09-17T15:27:36.278Z"
   },
-  "agoraId": "wJHiY4",
-  "creationDate": 1597174571356
+  "productId": "wJHiY4"
 }

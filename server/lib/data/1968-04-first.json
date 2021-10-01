@@ -1,6 +1,7 @@
 {
   "_version": 3.6,
-  "agora": {
+  "creationDate": 1597174571356,
+  "product": {
     "brand": "New York Cover Store",
     "createdAt": "2021-09-17T14:33:09.776Z",
     "imageUrl": "assets/images/1968-04-first-issue.jpg",
@@ -25,6 +26,5 @@
     "productId": "gkBkDr",
     "updatedAt": "2021-09-17T15:24:37.712Z"
   },
-  "agoraId": "gkBkDr",
-  "creationDate": 1597174571356
+  "productId": "gkBkDr"
 }
